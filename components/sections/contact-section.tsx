@@ -127,12 +127,20 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-medium">Email</h4>
-                    <a
-                      href="mailto:steven@example.com"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      steven@example.com
-                    </a>
+                    <div className="space-y-1">
+                      <a
+                        href="mailto:stelaw469@gmail.com"
+                        className="text-muted-foreground hover:text-primary transition-colors block"
+                      >
+                        stelaw469@gmail.com
+                      </a>
+                      <a
+                        href="mailto:sgl230000@utdallas.edu"
+                        className="text-muted-foreground hover:text-primary transition-colors block"
+                      >
+                        sgl230000@utdallas.edu
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -143,12 +151,12 @@ export function ContactSection() {
                   <div>
                     <h4 className="font-medium">GitHub</h4>
                     <a
-                      href="https://github.com/steven"
+                      href="https://github.com/slaw469"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      github.com/steven
+                      github.com/slaw469
                     </a>
                   </div>
                 </div>
@@ -160,12 +168,12 @@ export function ContactSection() {
                   <div>
                     <h4 className="font-medium">LinkedIn</h4>
                     <a
-                      href="https://linkedin.com/in/steven"
+                      href="https://www.linkedin.com/in/steven-law-b918b530b/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      linkedin.com/in/steven
+                      linkedin.com/in/steven-law-b918b530b
                     </a>
                   </div>
                 </div>
@@ -192,7 +200,7 @@ export function ContactSection() {
                 <h4 className="font-medium mb-4">Let's Connect</h4>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com/steven"
+                    href="https://github.com/slaw469"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
@@ -200,7 +208,7 @@ export function ContactSection() {
                     <Github className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://linkedin.com/in/steven"
+                    href="https://www.linkedin.com/in/steven-law-b918b530b/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
@@ -208,7 +216,7 @@ export function ContactSection() {
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a
-                    href="mailto:steven@example.com"
+                    href="mailto:stelaw469@gmail.com"
                     className="h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
                   >
                     <Mail className="h-5 w-5" />

@@ -21,18 +21,18 @@ export const projects: Project[] = [
     shortDescription: "A platform connecting remote workers with ideal workspaces worldwide.",
     description: "NomadDesk is a comprehensive platform that connects digital nomads and remote workers with workspaces that match their preferences, budget, and location needs. The application features an interactive map interface, detailed workspace profiles, booking capabilities, and community reviews.",
     thumbnailUrl: "https://images.pexels.com/photos/7974/pexels-photo.jpg",
-    demoUrl: "https://nomad-desk.example.com",
-    githubUrl: "https://github.com/steven/nomad-desk",
-    technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Mapbox API", "Stripe", "Tailwind CSS"],
+    demoUrl: "https://nomad-desk-ochre.vercel.app/",
+    githubUrl: "https://github.com/slaw469/Nomad-Desk",
+    technologies: ["Next.js", "TypeScript", "Node.js", "Express.js", "Google Maps API", "Tailwind CSS", "@tanstack/react-router"],
     featured: true,
     images: [
       "https://images.pexels.com/photos/3182834/pexels-photo-3182834.jpeg",
       "https://images.pexels.com/photos/3182835/pexels-photo-3182835.jpeg",
       "https://images.pexels.com/photos/3182833/pexels-photo-3182833.jpeg"
     ],
-    challenges: "Building NomadDesk presented several challenges, including creating an intuitive search experience across global locations, implementing real-time availability updates, and developing a secure payment system that supports multiple currencies.",
-    solutions: "I implemented a custom geospatial search algorithm combined with Mapbox for location services. For real-time updates, I used WebSockets to broadcast availability changes, and integrated Stripe for payment processing with currency conversion handling.",
-    outcome: "NomadDesk has attracted over 500 registered users and lists more than 1,200 workspaces across 30 countries. The platform maintains a 4.8/5 satisfaction rating and has facilitated over 2,000 bookings since launch."
+    challenges: "Building NomadDesk presented several key challenges: implementing real-time workspace availability tracking, creating an intuitive map-based search interface, managing group bookings and coordination, building a responsive and intuitive UI, and handling user authentication and authorization securely.",
+    solutions: "I implemented custom components for map integration using Google Maps API, created a responsive design with Tailwind CSS, set up real-time updates through a well-structured Express.js backend, and developed comprehensive error handling and user feedback systems. The application uses TypeScript throughout to ensure type safety and maintainability.",
+    outcome: "NomadDesk successfully launched as a fully functional platform for connecting remote workers with workspaces. The application features a modern, responsive UI, real-time availability updates, and an intuitive booking system. The project demonstrates strong full-stack development capabilities and attention to user experience."
   },
   {
     id: "weather-dashboard",

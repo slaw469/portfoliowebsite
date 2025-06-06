@@ -35,7 +35,7 @@ export function AboutSection() {
                 className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20"
               >
                 <Image
-                  src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
+                  src="/images/stevenheadshot.jpeg"
                   alt="Steven profile"
                   fill
                   className="object-cover"

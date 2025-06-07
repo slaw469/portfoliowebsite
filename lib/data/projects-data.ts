@@ -35,39 +35,41 @@ export const projects: Project[] = [
     outcome: "NomadDesk successfully launched as a fully functional platform for connecting remote workers with workspaces. The application features a modern, responsive UI, real-time availability updates, and an intuitive booking system. The project demonstrates strong full-stack development capabilities and attention to user experience."
   },
   {
-    id: "weather-dashboard",
-    title: "Weather Dashboard",
-    shortDescription: "Interactive weather visualization app with forecast predictions.",
-    description: "Weather Dashboard is a responsive web application that provides users with detailed weather information and forecasts for any location worldwide. The dashboard features interactive charts, customizable units, and saved location functionality.",
-    thumbnailUrl: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg",
-    demoUrl: "https://weather-app.example.com",
-    githubUrl: "https://github.com/steven/weather-app",
-    technologies: ["React", "Weather API", "Chart.js", "CSS Modules", "LocalStorage"],
+    id: "ultradian",
+    title: "Ultradian",
+    shortDescription: "Personal deep work timing coach that aligns productivity with natural energy rhythms.",
+    description: "Ultradian is a sophisticated productivity assistant that helps users optimize their workday by aligning tasks with their body's natural energy rhythms. The app generates personalized focus schedules, integrates with calendars, and includes a Chrome extension for AI-powered work tracking and analysis.",
+    thumbnailUrl: "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg",
+    demoUrl: "https://ultradian.vercel.app/",
+    githubUrl: "https://github.com/slaw469/Ultradian",
+    technologies: ["Next.js 14", "TypeScript", "PostgreSQL", "Prisma", "tRPC", "NextAuth.js", "Tailwind CSS", "Zustand", "TanStack Query", "Chrome Extensions API", "Framer Motion"],
     featured: false,
     images: [
-      "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg",
-      "https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg"
+      "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg",
+      "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg",
+      "https://images.pexels.com/photos/159832/clock-time-hour-minute-159832.jpeg"
     ],
-    challenges: "Creating an intuitive data visualization system for complex weather data while ensuring the application remained responsive across all devices.",
-    solutions: "Implemented custom Chart.js configurations with responsive breakpoints and developed a simplified UI that progressively reveals detailed information as needed.",
-    outcome: "The Weather Dashboard received positive feedback for its clean design and intuitive interface, with users particularly appreciating the ability to compare forecasts across multiple saved locations."
+    challenges: "Creating Ultradian involved complex challenges: developing algorithms to analyze and predict personal energy patterns, integrating with external APIs (Google Calendar), building a Chrome extension that seamlessly communicates with the web app, implementing real-time schedule adjustments based on user feedback, and creating an intuitive UI that visualizes complex productivity data.",
+    solutions: "I implemented a sophisticated data analysis system using TypeScript and PostgreSQL to track energy patterns over time. Built with Next.js 14 App Router for optimal performance, used tRPC for type-safe APIs, and created a Chrome extension that uses AI to generate work summaries. The app features real-time state management with Zustand and smooth animations with Framer Motion to enhance user experience.",
+    outcome: "Ultradian represents a comprehensive productivity solution that successfully combines cutting-edge web technologies with practical biohacking principles. The application demonstrates advanced full-stack development skills, including real-time data processing, external API integrations, browser extension development, and complex state management. The project showcases expertise in modern web development patterns and user-centered design."
   },
   {
-    id: "task-flow",
-    title: "TaskFlow",
-    shortDescription: "Productivity app with Kanban boards and time tracking.",
-    description: "TaskFlow is a productivity application that combines Kanban-style task management with integrated time tracking features. Users can create boards, customize workflows, set task dependencies, and generate productivity reports.",
-    thumbnailUrl: "https://images.pexels.com/photos/3243/pen-calendar-to-do-checklist.jpg",
-    demoUrl: "https://taskflow.example.com",
-    githubUrl: "https://github.com/steven/taskflow",
-    technologies: ["Vue.js", "Vuex", "Firebase", "Tailwind CSS", "PWA"],
+    id: "ai-time-doubler",
+    title: "AI Time Doubler",
+    shortDescription: "Productivity browser extension that eliminates context-switching time with AI-powered session summaries.",
+    description: "AI Time Doubler is a sophisticated productivity tool that combines a browser extension with a web dashboard to eliminate the time lost when returning to work. It automatically tracks your work sessions, generates AI-powered summaries of what you were working on, and suggests next steps to help you instantly regain momentum.",
+    thumbnailUrl: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg",
+    demoUrl: "https://ai-time-doubler.vercel.app",
+    githubUrl: "https://github.com/slaw469/AI-Time-Doubler",
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Chrome Extensions API", "OpenAI API", "JavaScript"],
     featured: false,
     images: [
-      "https://images.pexels.com/photos/3243/pen-calendar-to-do-checklist.jpg",
-      "https://images.pexels.com/photos/1226398/pexels-photo-1226398.jpeg"
+      "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg",
+      "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg",
+      "https://images.pexels.com/photos/4439901/pexels-photo-4439901.jpeg"
     ],
-    challenges: "Designing a drag-and-drop interface that was both intuitive and maintained state consistency, while also implementing accurate time tracking across devices.",
-    solutions: "Utilized Vue's reactivity system with Vuex for state management, implemented custom drag-and-drop directives, and used Firebase for real-time synchronization across devices.",
-    outcome: "TaskFlow has been adopted by several small teams and freelancers, who report an average 15% increase in productivity after implementing the application into their workflows."
+    challenges: "Building AI Time Doubler required solving complex technical challenges: developing a browser extension that intelligently tracks user context across tabs and applications, implementing real-time AI summarization using OpenAI's API while managing rate limits and costs, creating seamless communication between the browser extension and web dashboard, and designing algorithms to detect meaningful work patterns and suggest relevant next steps.",
+    solutions: "I implemented a modern solution using React with TypeScript for type safety and Vite for fast development builds. The browser extension uses Chrome's API to track tab activity and capture work context, while the web dashboard provides AI-powered session summaries through OpenAI integration. Tailwind CSS and shadcn/ui components ensure a clean, responsive interface with excellent user experience.",
+    outcome: "AI Time Doubler successfully reduces context-switching time to under 30 seconds, demonstrating advanced skills in browser extension development, AI integration, and modern React architecture. The project showcases expertise in TypeScript, modern build tools (Vite), and API integrations. The application provides significant productivity improvements for developers, students, and knowledge workers who frequently switch between multiple projects and tasks."
   }
 ];

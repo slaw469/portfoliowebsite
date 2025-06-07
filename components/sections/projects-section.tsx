@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
-import { projects } from "@/lib/data/projects-data";
+import { projects, type Project } from "@/lib/data/projects-data";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Github, ExternalLink, X } from "lucide-react";
@@ -18,11 +18,11 @@ import {
 } from "@/components/ui/carousel";
 
 export function ProjectsSection() {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
 
-  const handleOpenProject = (project) => {
+  const handleOpenProject = (project: Project) => {
     setSelectedProject(project);
   };
 
@@ -203,7 +203,7 @@ export function ProjectsSection() {
             <div className="mt-4 space-y-6">
               <Carousel className="w-full">
                 <CarouselContent>
-                  {selectedProject.images.map((image, index) => (
+                  {selectedProject.images.map((image: string, index: number) => (
                     <CarouselItem key={index}>
                       <div className="relative h-72 md:h-96 w-full rounded-lg overflow-hidden">
                         <Image
@@ -229,7 +229,7 @@ export function ProjectsSection() {
                 <div>
                   <h4 className="text-lg font-semibold mb-2">Technologies</h4>
                   <div className="flex flex-wrap gap-2">
-                    {selectedProject.technologies.map((tech) => (
+                    {selectedProject.technologies.map((tech: string) => (
                       <Badge key={tech} variant="secondary">
                         {tech}
                       </Badge>
